@@ -2,8 +2,7 @@
 total_value = 0
 
 print("Enter info for 3 products:\n")
-products = []
-
+products = [] 
 for i in range(3):
     name = input("Product name: ")
     price = float(input("Price: "))

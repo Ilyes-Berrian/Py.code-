@@ -73,3 +73,221 @@
 #else: 
 #    print(f'Failed!!😢\n')
 
+#print('Price of a house in $1M!!')
+#price= 10**6
+#good_credit= input('do you have a good credit(yes or no): ')
+#if good_credit== "yes":
+#  print(f"Down payment: ${price*0.1:,.2f} !! ")     
+#else:
+#   print(f"Down payment: ${price*0.2:,.2f} !! ")
+
+#import math
+#print('\nAbsolute Deffirence!! ')
+# This program calculates the absolute difference between two numbers.
+#n1= float(input('enter the first number: '))
+#n2= float(input('enter the second number: '))
+#abs_def= abs(n1-n2)
+#print(f'the absolute deffirence between {n1} and {n2} is: {abs_def:+,.2f}\n')
+
+
+#print('Rounding Calculator!! ')
+#number= float(input('Enter a decimal number: '))
+#num_round= round(number)
+#print(f'\nThe rounded number: {num_round}')
+#print(f'The rounded number to 2 decimal places: {round(number,2)}')
+
+
+#radius= float(input('Please enter the raduis of the circle in (cm): '))
+#area= (math.pi*pow(radius,2))*pow(10,-2)
+#perimeter=(math.pi*2*radius)*pow(10,-2)
+#print(f'The Area: {area:,.3f} m²')
+#print(f'The Perimeter: {perimeter:,.3f} m')
+
+
+#username= input('Enter your name: ')
+#len(username)
+#weight=float(input('Enter your weight: '))
+#choice=input('type (l)for bs, (k)for kg: ')
+#if len(username)<3:
+#    print('name must be at least of 3 characters!!')
+#elif len(username)>50:
+#    print('name can be a maximum of 50 characters!!')
+#else:
+#    print('Your name looks good👍') 
+#if choice=='l':
+ #   weight=weight*0.45
+ #   print(f"You're {weight:.2f} KG")
+#elif choice.lower()=='k':
+#    weight=weight/0.45
+#    print(f"You're {weight:.2f} LB")
+#else:
+#    print("Invalid choice!\n\n")
+
+
+#print('Adult Classefier!!\n')
+#age=int(input('Please enter your age: '))
+#<13:child,13-17:Teen,18-64:adult,>64:seior
+#if age<=0:
+#    print('Invalid age!!')
+#elif age<13:
+#    print("You're: child.")
+#elif 13<=age<=17:
+#    print("You're: teen.")
+#else:
+#    print("You're: ","adult" if 18<=age<=64 else "senior")
+
+
+#print(f'{"\nTemperature Category!!?\n":=>48}{'='*23}')
+#degree= float(input("Enter temperature in Celsuis(°C): "))
+#<0:freezing,0-10:cold,10-20:cool,20-30:warm,>30:hot
+#if degree<=0:
+#    print("Weather is: Freezing🥶")
+#elif 0<degree<=10:
+#    print("Weather is: Cold❄️")
+#elif 10<degree<=20:
+#    print("Weather is: Cool😎")
+#else:
+#    print("Weather is: ",'Warm☀️' if 20<degree<=30 else 'Hot🥵')
+
+
+#print(f"{'\nLogin Attempts!!':=>33}\n{'='*16}")
+#user_name=input('Enter user name: ')
+#password=input('Enter your password: ')
+#attempt=1
+#print(f"{'\nWelcome':=>15}\n{'='*7}")
+#while (attempt<=3): 
+#    print(f'\nAttempt: {attempt}')
+#    user_again=input('Enter user name: ')
+#    pass_again=input('Enter your password: ')
+#    if (user_again == user_name) and (pass_again == password):
+#        print(f'{"\nAccount opened!!":=>33}')
+#        break
+#    attempt+=1
+#else:
+#    print(f'{"\nAccount locked!!":=>33}')
+
+
+#print(f'{"\nGuessing Game!!":=>31}\n{"="*15}')
+#guess_count=1
+#secret_num=13
+#while guess_cout<=3:
+#    guess_n=int(input('Guess: '))
+#    if guess_n==secret_num:
+#        print('You won!!') 
+#        break
+#    guess_cout+=1
+#else:
+#    print('Game Over!!')
+
+#print(f'{"\nCar Game!!":=>21}\n{"="*10}')
+#stop_check=False
+#while True:
+#    command=input('> ').lower()
+#    if command=="help":
+#        print('''"start" -to start the car. 
+#"stop" -to stop the car.
+#"quit" -to exit.''')
+#    elif command=="start":
+#        if not stop_check:
+#            print('The car started...Ready to go!! ')
+#            stop_check=True
+#        else:
+#            print('Hey,the car already started,what do you do?')
+#    elif command=="stop":
+#        if  stop_check:
+#            print('The car stopped!!')
+#            stop_check=False
+#        else:
+#            print('Hey,the car already stopped,what do you do?')
+#    elif command=="quit":
+#        break
+#    else:
+#        print("I don't understand that...")
+
+#list=[1,2,3,4,5,6,7,8]
+#for cursor in list:
+#    printer=''
+#    for count in range(cursor):
+#        printer+='x '
+#    print(printer)   
+
+#print('Find Maximum!!')
+#list_num=[3,10.2,997.5,45]
+#max=list_num[0]
+#for test in list_num:
+#        if test>max:
+#            max=test
+#print(f'max:{max}')
+
+#print('Remove duplications!!')
+#list=[1,2,4,4]
+#x, y, z, printk=list   
+#print(x,'',y,'',z,'',k,'\n',list.count(k),' ',list.index(y))
+import math
+#Xn+1=[2Xn+(A/Xn**2)]/3
+    
+#while True:
+#    A=float(input('Enter the number: '))
+#    if A>=0: 
+#        X1=A/3   
+#        while True:
+#            X2=(2*X1+(A/X1**2))/3
+#            if abs(X2-X1)<10**-6:
+#                print(f'the cube root of {A} is:{round(X1,5)}')
+#                break
+#            else:
+#                X1=X2
+#    break
+#print("Exercise 05.")
+#list=[]
+#while True: 
+#    N=int(input('choose the list size with up to 100 integers or : '))
+#    if 0<N<=100:
+#        for i in range(N):
+#            num=int(input(f'Ener the number {i+1}: ')) 
+#            list.append(num)
+#    break
+#print(list)
+#list.sort()
+#print(list)
+#list.reverse()
+#print(list)
+
+#print("Exercise 18.")
+
+#A=[]
+#vowel=['a','e','i','o','u','A','E','I','O','U']
+#while True:
+#    M=int(input('Enter the number of columns: '))
+#    N=int(input('Enter the number of rows: '))
+#    if 0<N<20 and 0<M<30:
+#        for row in range(N):
+#            a=[]
+#            print('fill in the row',row+1)
+#            for column in range(M):
+#                ind_A=input()
+#                a.append(ind_A)
+#            A.append(a)
+#    break
+#print(A)
+
+#print(f'\n{"\nSearch for your character!!":=>55}\n{"="*27}\n')
+#ch_look=input("Enter the character you're looking for: ")
+#found=False
+#for row in A:
+#    for column in row:
+#        if column==ch_look:
+#            print('the character is found!!\n')
+#            found=True
+#            break
+#if not found:
+#    print("the character doesn't exist!!\n")
+    
+#print(f'{"\nCounting vowels!!":=>35}\n{"="*17}\n')
+#count=0
+#for row in A:
+#    for column in row:
+#        for ch in column:
+#            if ch in vowel:
+#                count+=1
+#print(f'the number of vowels in this matrix is{count:>3}')
