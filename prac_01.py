@@ -1,3 +1,4 @@
+import math
 #name = input("What's your name? " )
 #Fi_color = input("What's your favorite color? ") + ' white😲😍'
 #color_cpy= ' and for me is just ('+Fi_color[0:4]+')'
@@ -81,7 +82,7 @@
 #else:
 #   print(f"Down payment: ${price*0.2:,.2f} !! ")
 
-#import math
+
 #print('\nAbsolute Deffirence!! ')
 # This program calculates the absolute difference between two numbers.
 #n1= float(input('enter the first number: '))
@@ -223,7 +224,6 @@
 #list=[1,2,4,4]
 #x, y, z, printk=list   
 #print(x,'',y,'',z,'',k,'\n',list.count(k),' ',list.index(y))
-import math
 #Xn+1=[2Xn+(A/Xn**2)]/3
     
 #while True:
@@ -291,3 +291,14 @@ import math
 #            if ch in vowel:
 #                count+=1
 #print(f'the number of vowels in this matrix is{count:>3}')
+
+#print("Ceil & Floor/Max & Min")
+#dec=float(input('Enter a decima number: '))
+#print('Floor: ',math.floor(dec),'\n','Ceiling: ',math.ceil(dec))
+
+#set=input('Enter 5 numbers seperated by space: ')
+#flist=[float(num) for num in set.split()]
+    
+#print(f'''Flist={flist}
+#The maxixmum number is: {max(flist)} 
+#The minmum number is: {min(flist)}''')    
