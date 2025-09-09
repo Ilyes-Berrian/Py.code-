@@ -292,13 +292,260 @@ import math
 #                count+=1
 #print(f'the number of vowels in this matrix is{count:>3}')
 
-#print("Ceil & Floor/Max & Min")
-#dec=float(input('Enter a decima number: '))
-#print('Floor: ',math.floor(dec),'\n','Ceiling: ',math.ceil(dec))
+#list slicing & Counting
+#list=["apple", "banana", "cherry", "apple", "orange", "banana"]
+#list.pop()
+#print(f'{list[0:3]}\n{list[-2:]}\n{list.count("apple")}\n{list.index("cherry")}\n{list}\n')
 
-#set=input('Enter 5 numbers seperated by space: ')
-#flist=[float(num) for num in set.split()]
-    
-#print(f'''Flist={flist}
-#The maxixmum number is: {max(flist)} 
-#The minmum number is: {min(flist)}''')    
+#Tuple Unpacking
+#set=("Ilyes Berrian",20,"Algeria")
+#name,age,country=set
+#print(f'My name is {name}, I am {age} years old and I live in {country}.!!\n{set.count('e')}')
+
+#print('fill in the matrix\n')
+#matrix=[]
+#row=int(input('lines: '))
+#column=int(input('columns: '))
+#for i in range(row):
+#    a=[]
+#    for j in range(column):
+#       num=int(input(f'next number: '))
+#        a.append(num)
+#    matrix.append(a)
+#for i in range(row):
+#    if i==1:
+#        a=[]
+#        for j in range(column):
+#            a.append(matrix[i][j])
+#        break
+#print(a)
+#print(matrix[2][1])
+
+#swap with tuple unpacking
+#n1=float(input('Enter the number1: '))
+#n2=float(input('Enter the number2: '))
+#print(f'before swapping: n1={n1}, n2={n2}')
+
+#n1,n2=n2,n1
+#print(f'after swapping: n1={n1}, n2={n2}')
+
+#print(f'{"\nstudent grade manager".title():=>43}\n{"="*21}\n')
+#create 5 student's grade list
+#total=0
+#std=[]
+#for count in range(5):
+#    grade=float(input(f'The grade of student{count+1}: '))
+#    std.append(grade)
+#    total+=grade
+#ad_grade=float(input('the additional grade: '))
+#std.append(ad_grade)
+#total+=ad_grade
+
+#for i in range(6):
+#    if i==0:
+#        min=std[i]
+#    elif std[i]<min:
+#        min=std[i]
+#total-=min
+#std.remove(min)
+#std.sort()
+#g1,g2,g3=std[0],std[1],std[2]
+#average=total/len(std)
+#print(f'''High grade:{std[-1]}
+#min:{min}, {std}
+#Average grade:{average}
+#Lowest grade:{g1}''')
+
+## Dictionaries
+#phone=input('Phone: ')
+#digit_mapping={
+#    '0':'zero',
+#    '1':'one',
+#    '2':'two',
+#    '3':'three',
+#    '4':'four',
+#   '5':'five',
+#    '6':'six',
+#    '7':'seven',
+#   '8':'eight',
+#    '9':'nine',
+#}
+#map=''
+#for num in phone:
+#    map+=digit_mapping.get(num,"!")+' '
+#print(map) 
+
+#print('Emoji Converter')
+#def EmConvert(feel):
+#    emoji_mapping={
+#        ':)':'😊',
+#        ':(':'😞',
+#        ':D':'😄',
+#        ':P':'😛',
+#        'B)':'😎',
+#    }
+#    convert=''
+#    for ch in feel.split(' '):
+#        convert+=emoji_mapping.get(ch,ch)+" "
+#    print(convert)
+
+#emoji=input('feel > ')
+#EmConvert(emoji)
+
+#basic dectionary
+#def regester(num,age,coun):
+#    info={
+#        'name':num,
+#        'age':age,
+#        'Country':coun,
+#    }
+#    
+#    print(f'Name: {info['name']}\nCome from: {info['Country']}')
+#regester(num='Jack',coun='Japan',age=35)
+
+#dec={}
+#dec['burthday']='18/12/1945'
+#dec['High school graduation']='15/07/2027'
+#dec['Phone Number']='+490248 978 454'
+#print(f'{dec['burthday']}\n{dec['High school graduation']}\n{dec['Phone Number']}')
+#dec['Phone Number']='+213670 45 90 77'
+#print(dec)
+
+#dect methods
+#fruit={
+#    'apple':10,
+#    'banana':15,
+#    'tomato':30,
+#}
+#print('\nProducts:',fruit.keys())
+#print('Prices:',fruit.values())
+#print('Items:',fruit.items())
+#rint()
+#rmv_item=fruit.pop('tomato')
+#print(f'removed Item:\ntomato: ${rmv_item}')
+#print('Updated cart items:\n',fruit)
+
+#sentence=input('Enter a sentence: ')
+#sen_splt=sentence.split(' ')
+#word_count={}
+
+#for word in sen_splt:
+#    if word in word_count:
+#        word_count[word]+=1
+#    else:
+#        word_count[word]=1
+
+#print('Words Counter:\n',word_count)
+
+#classmate={
+#    'student1':{
+#        'age':'23',
+#        'grade':'16.30',
+#        'city':'Hirochima',
+#    },
+#    'student2':{
+#        'age':'23',
+#        'grade':'18.56',
+#        'city':'Nakazaki',
+#    },
+#}
+#print('Grade of the second student: ',std2['grade'])
+
+#Dictionary from list
+#k_list=['full name','E-mail','location']
+#v_list=['ilyes berrian'.title(),'ilyes.soft@gmail.com','UK']
+#contact_info=dict(zip(k_list,v_list)) 
+#print(contact_info)
+
+#classes and constructors
+#class Person:
+#    def __init__(self,name,profession):
+#        self.name=name
+#        self.profession=profession
+#    def message(self):
+#        print(f"Hi,I'm {self.name}, {self.profession}.")
+#name=input('> ')
+#career=input('> ')
+#someone=Person(name,career)
+#someone.message()
+
+#Contact Book
+#contact_book={
+#    'Mr.John':'132 456 789',
+#   'Dr.Makarthi':'321 654 987',
+#    'Boss Jack':'798 456 123',
+#}
+
+#while True:
+#    print('''\nPick a number from Contact Services:
+#1- Search for a contact name.
+#2- Update a contact number.
+#3- Remove a contact.
+#4- View Contact Book.''')
+#    choice=input('\n> ')
+#    if choice=='1':
+#        name=input("Enter the contact name you're looking for: ").title()
+#        check=False
+#        for key in contact_book.keys():
+#            if key==name:
+#                print(f'\n{name}: {contact_book[key]} \nThanks for working with us!!')
+#
+#check=True
+#                break
+#        if not check:
+#            print("\nUnavailable contact. \nWe're sorry")
+#    elif choice=='2':
+#        name=input('Enter the contact name you wanna update its number: ').title()
+#        check=False
+#        for key in contact_book.keys():
+#                contact_book[key]=input('Enter the new contact number you wanted: ')
+#               print(f'\nThe contact number has been updated \nThanks for working with us!!')
+#                check=True
+#                break
+#        if not check:
+#            print("\nUnavailable contact. \nWe're sorry")
+#    elif choice=='3':   
+#        name=input('Enter the contact name you want to remove it: ').title()
+#        check=False
+#        for key in contact_book.keys():
+#            if key==name:
+#                removed_con=contact_book.pop(key)
+#                print('\nThe contact info has been removed \nThanks for working with us!!')
+#                print(contact_book)
+#                check=True
+#                break
+#        if not check:
+#            print("\nUnavailable contact. \nWe're sorry")     
+#    elif choice=='4':
+#        print('='*23)
+#        for key in contact_book.keys():
+#            print(f'{key}: {contact_book[key]}.')
+#        print('\nThanks for working with us!!')
+#        print('='*23)
+#    else:
+#        exit()
+
+#Classes,Constructors & Inheritance
+
+#class Car:
+#    pass
+#
+#car=Car()
+#car.brand=input('Brand of the car: ').upper()
+#car.model=input('Model of the car: ').title()
+#print(f'CAR: \nBrand: {car.brand} \nModel: {car.model}')
+
+#class Person:
+#    def __init__(self,name,age):
+#        self.name=name
+#        self.age=age
+#name=input('1st person, Enter your name: ').title()
+#age=int(input('Your age:'))
+#person1=Person(name,age)
+#name=input('2nd person, Enter your name: ').title()
+#age=int(input('Your age:'))
+#person2=Person(name,age)
+
+#print(f'''Person_1: {person1.name}, Age: {person1.age}
+#Person_2: {person2.name}, Age: {person2.age}''')
+
