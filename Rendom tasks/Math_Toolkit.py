@@ -45,7 +45,7 @@ while True:
         print(f'The maximum in the list: {max(list)} \nThe minimum in the list: {min(list)}\n')
         
     elif choice==6:
-        exit()
-        
+        print('program ended.\n')
+        quit()
     else:
         print(f'{"Invalid choice!!\n"}{'-'*16}\n')
